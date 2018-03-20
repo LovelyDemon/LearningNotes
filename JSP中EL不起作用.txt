@@ -1,0 +1,5 @@
+在Spring MVC开发中, 开发人员可能会设置某个值到 model 中, 并通过EL表达式在JSP显示, 例如: ${msg}, 但并没有解析为对应的 “value”, 输出结果还是老样子: ${msg}。也就是说JSP中 的 EL 不起作用了,为什么呢?
+在 Spring MVC 的入门项目中, 这是最常见的问题。实际上这是因为使用了 JSP 1.2 规范引起的：
+	<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd" >
+这种情况下, EL表达式默认是禁用或者忽略的, 必须手动启用,才会输出 model 中的值。
+即删掉jsp1.2规范即可
