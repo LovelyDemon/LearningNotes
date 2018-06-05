@@ -1,0 +1,5 @@
+1）http://idea.lanyus.com/下载JetbrainsCrack-2.8-release-enc.jar放到bin目录下
+2）修改idea64.exe.vmoptions和idea.exe.vmoptions文件：
+	在末尾增加-javaagent:D:\JetBrains\PyCharm 2018.1.2\bin\JetbrainsCrack-2.8-release-enc.jar
+	-Dfile.encoding=UTF-8可解决控制台乱码问题
+3）http://idea.lanyus.com/获取注册码写入启动时的注册那里，破解完成
